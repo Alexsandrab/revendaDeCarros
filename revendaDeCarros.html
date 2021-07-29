@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCar Revendas</title>
+    <style>
+        img {
+            width: 450px;
+            height: 450px;
+            left: 55%;
+            position: relative;
+        }
+        .container{
+            position: relative;
+            text-align:center;
+            font-size: 30px;
+            top: -400px;
+            right: 20%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .input{
+            width: 20%;
+            height: 20%;
+            border-radius: 10%;
+            border-color: currentColor;
+            color: rgb(104, 10, 104);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #mostrarLista{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="carro.jpg" alt="carro">
+    <div class="container">
+        <h1>AutoCar Revendas</h1>
+        <label for="model">Modelo do Veículo:</label>
+        <input type="text" id="modelo" autofocus class="input">
+        <br>
+        <label for="valor">Preço:</label>
+        <input type="text" id="preco" class="input">
+        <br>
+        <input type="button" value="Adicionar" id="BtAdicionar" class="input">
+        <br><br>
+        <input type="button" value="Listar" id="BtListar" class="input">
+        <input type="button" value="Filtrar" id="BtFiltrar" class="input">
+        <pre id="mostrarLista"></pre>
+    </div>
+</body>
+<script src="revender.js"></script>
+
+</html>
